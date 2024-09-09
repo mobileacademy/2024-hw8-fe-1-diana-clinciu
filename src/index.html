@@ -1,9 +1,33 @@
 <html>
-  <head>
-    <title>Minesweeper</title>
-    
-  </head>
-  <body>
-    <h1>Hello world</h1>
-  </body>
+
+<head>
+  <title>Minesweeper</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+  <form id="settings-form">
+    <label for="dificulty">Select dificulty:</label>
+    <select name="dificulty" id="dificulty">
+      <option value="EASY">Easy</option>
+      <option value="MEDIUM">Medium</option>
+      <option value="HARD">Hard</option>
+    </select>
+
+    <label for="bomb-probability">Bomb probability:</label>
+    <input type="number" id="bomb-probability" name="bombProbability">
+
+    <label for="max-probability">Max probability:</label>
+    <input type="number" id="max-probability" name="maxProbability">
+    <button type="submit">New Game</button>
+  </form>
+
+  <div id="board"></div>
+  <p id="message"></p>
+
+  <script type="module" src="constants.js"></script>
+  <script type="module" src="./solution-template.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,19 @@
+#board {
+    display: grid;
+    margin: 2rem auto;
+}
+
+#board>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#board>div:hover {
+    opacity: 0.8;
+}
+
+#message {
+    font-weight: bold;
+    text-align: center;
+}
